@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    --bg-btn: #7c7c7c2b;
+    --text-color: white;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background: #222;
+    background: url("https://source.unsplash.com/1800x900/?nature,water") no-repeat;
+    background-size: cover;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 1em;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__btn {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    background: var(--bg-btn);
+    color: var(--text-color);
+    transition: 0.2s ease-in-out;
+}
+
+.search__btn:hover {
+    background: #7c7c7c6b;
+    cursor: pointer;
+}
+
+.search__bar {
+    border: none;
+    outline: none;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    background: var(--bg-btn);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 6.2rem);
+}
+
+.weather__description {
+    text-transform: capitalize;
+}
+
+.weather__flex {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.weather__temp {
+    margin: 0;
+}
+
